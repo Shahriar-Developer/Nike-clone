@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Footwear Collection</title>
-  <link rel="stylesheet" href="/Website Landing Page/style.css">
+  <link rel="stylesheet" href="/style.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 
@@ -13,62 +13,73 @@
   <!-- Navbar -->
   <header class="navbar">
     <div class="logo">
-      <img src="/Website Landing Page/images/nike-logo-0.png" alt="Logo">
+      <img src="images/nike-logo-0.png" alt="Logo">
     </div>
     <nav>
       <ul class="nav-links">
         <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="men.html">Men</a></li>
-        <li><a href="women.html">Women</a></li>
-        <li><a href="kids.html">Kids</a></li>
-        <li><a href="collection.html">Collection</a></li>
-        <li><a href="review.html">Reviews</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="login.html">Login</a></li>
+        <li><a href="pages/men.html">Men</a></li>
+        <li><a href="pages/women.html">Women</a></li>
+        <li><a href="pages/kids.html">Kids</a></li>
+        <li><a href="pages/collection.html">Collection</a></li>
+        <li><a href="pages/review.html">Reviews</a></li>
+        <li><a href="pages/contact.html">Contact</a></li>
+        <li><a href="pages/login.html">Login</a></li>
       </ul>
     </nav>
   </header>
 
-
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-text">
-      <h1>Step Into Style</h1>
-      <p>Explore our latest Nike-inspired footwear collection.
-        Just Do It".
-        The classic, action-oriented slogan that has been a cornerstone of Nike's brand identity for
-        decades.
+      <h1 class="animated-heading">Step Into Style</h1>
+      <p>
+        Explore our latest Nike-inspired footwear collection.
+        <strong>"Just Do It"</strong> — the timeless slogan that has been a cornerstone of Nike's brand identity.
       </p>
+      <p class="tagline">Your journey starts with every step.</p>
       <a href="collection.html" class="btn">Shop Now</a>
+      <div class="scroll-indicator"><i class="ri-arrow-down-line"></i></div>
     </div>
     <div class="hero-img">
-      <img src="/Website Landing Page/images/original-a79a212f9e122b447446d4a44f91a548.webp" alt="Hero Shoe">
+      <!-- You can keep an image OR replace with video -->
+      <video autoplay muted loop playsinline>
+        <source
+          src="Videos/SSYouTube.online_Shoes Motion Graphics - Blender and After Effects  Pull and Bear_1080p.mp4"
+          type="video/mp4">
+      </video>
     </div>
   </section>
 
+
+
   <!-- Featured Products -->
-  <section class="featured">
+  <section class="products">
     <h2>Featured Products</h2>
     <div class="product-grid">
       <div class="product-card">
-        <img src="/Website Landing Page/images/air-max-1-lx-shoes.png" alt="Shoe 1">
+        <img src="images/air-max-1-lx-shoes.png" alt="Shoe 1">
         <h3>Air Runner</h3>
-        <p>$129</p>
+        <p>BDT 12900</p>
+        <a href="pages/contact.html"><button>Add to Cart</button></a>
       </div>
       <div class="product-card">
-        <img src="/Website Landing Page/images/lunar-roam-shoes.png" alt="Shoe 2">
+        <img src="images/collection/NIKE+X+LEGO+COLLECTION+HOODIE.avif" alt="Shoe 2">
         <h3>Zoom Max</h3>
-        <p>$149</p>
+        <p>BDT 14900</p>
+        <a href="pages/contact.html"><button>Add to Cart</button></a>
       </div>
       <div class="product-card">
-        <img src="/Website Landing Page/images/air-peg-2k5-shoes.png" alt="Shoe 3">
+        <img src="images/kids/A'ONE+(GS).avif" alt="Shoe 3">
         <h3>FlyEase</h3>
-        <p>$179</p>
+        <p>BDT 17900</p>
+        <a href="pages/contact.html"><button>Add to Cart</button></a>
       </div>
       <div class="product-card">
-        <img src="/Website Landing Page/images/nocta-glide-shoes.png" alt="Shoe 4">
+        <img src="images/collection/M+NK+TF+SHERPA+PANT+NAOS.avif" alt="Shoe 4">
         <h3>React Vision</h3>
-        <p>$199</p>
+        <p>BDT 19900</p>
+        <a href="pages/contact.html"><button>Add to Cart</button></a>
       </div>
     </div>
   </section>
@@ -78,14 +89,31 @@
     <h2>Stay Updated</h2>
     <p>Get exclusive offers & updates on latest releases.</p>
     <form action="#">
-      <input type="email" placeholder="Enter your email">
+      <input type="email" placeholder="Enter your email" required>
       <button type="submit" class="btn">Subscribe</button>
     </form>
   </section>
 
   <!-- Footer -->
-  <footer>
-    <p>© 2025 Footwear Collection | Inspired by Nike</p>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <h3>Nike Inspired</h3>
+        <p>© 2025 Footwear Collection | Inspired by Nike</p>
+      </div>
+      <div class="footer-right">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+        <div class="social-icons">
+          <i class="ri-facebook-line"></i>
+          <i class="ri-twitter-line"></i>
+          <i class="ri-instagram-line"></i>
+        </div>
+      </div>
+    </div>
   </footer>
 </body>
 

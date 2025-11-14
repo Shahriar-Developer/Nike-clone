@@ -1,71 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact - Nike Inspired</title>
-  <link rel="stylesheet" href="/Website Landing Page/style.css">
+  <link rel="stylesheet" href="../style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
 </head>
+
 <body>
 
   <!-- Navbar -->
   <header class="navbar">
-    <div class="logo"><img src="images/nike-logo-0.png" alt="Logo"></div>
+    <div class="logo">
+      <img src="../images/nike-logo-0.png" alt="Logo">
+    </div>
     <nav>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="men.html">Men</a></li>
-        <li><a href="women.html">Women</a></li>
-        <li><a href="kids.html">Kids</a></li>
-        <li><a href="collection.html">Collection</a></li>
-        <li><a href="review.html">Reviews</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-        <li><a href="login.html">Login</a></li>
+        <li><a href="../index.html" class="active">Home</a></li>
+        <li><a href="../pages/men.html">Men</a></li>
+        <li><a href="../pages/women.html">Women</a></li>
+        <li><a href="../pages/kids.html">Kids</a></li>
+        <li><a href="../pages/collection.html">Collection</a></li>
+        <li><a href="../pages/review.html">Reviews</a></li>
+        <li><a href="../pages/contact.html">Contact</a></li>
+        <li><a href="../pages/login.html">Login</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Contact Section -->
-  <main class="contact-page">
-    <div class="contact-form" style="margin-top: 10%;">
-      <h2>Get in Touch</h2>
-      <form action="#" method="post">
-        <div class="form-group">
-          <label for="name">Full Name</label>
-          <input type="text" id="name" name="name" placeholder="Your Name" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Your Email" required>
-        </div>
-        <div class="form-group">
-          <label for="phone">Phone</label>
-          <input type="tel" id="phone" name="phone" placeholder="Your Phone" required>
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="4" placeholder="Your Message..." required></textarea>
-        </div>
-        <button type="submit" class="submit-btn">Send Message</button>
-      </form>
-    </div>
+  <div class="contact-form" style="margin-top: 10%;">
+    <h2>Share Your Feedback</h2>
+    <form action="#" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Contact & Feedback</legend>
 
-    <!-- Contact Info -->
-    <div class="contact-grid" style="margin-top: 10%;">
-      <div class="contact-card">
-        <i class="ri-map-pin-line"></i>
-        <p>Dhaka, Bangladesh</p>
-      </div>
-      <div class="contact-card">
-        <i class="ri-phone-line"></i>
-        <p>+880 123 456 789</p>
-      </div>
-      <div class="contact-card">
-        <i class="ri-mail-line"></i>
-        <p>info@nike-inspired.com</p>
-      </div>
-    </div>
-  </main>
+        <div class="form-grid">
+          <!-- Left Column -->
+          <div class="column">
+            <label for="fullname">Full Name</label>
+            <input id="fullname" name="fullname" type="text" required placeholder="Full Name">
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="Email">
+
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" placeholder="Phone Number">
+
+            <label for="category">Category</label>
+            <select id="category" name="category" required>
+              <option value="">-- Select Category --</option>
+              <option value="product">Product Feedback</option>
+              <option value="service">Service Feedback</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <!-- Right Column -->
+          <div class="column">
+            <label for="file">Upload Screenshot (optional)</label>
+            <input id="file" name="file" type="file" accept=".jpg,.jpeg,.png,.pdf">
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Write your feedback..." required></textarea>
+
+            <label for="rating">Rate Us (0-10)</label>
+            <input id="rating" name="rating" type="range" min="0" max="10" value="5">
+          </div>
+        </div>
+
+        <label class="checkbox-row">
+          <input type="checkbox" required>
+          <span>I confirm my feedback is genuine.</span>
+        </label>
+
+        <div class="controls">
+          <input type="reset" value="Reset">
+          <input type="submit" value="Submit">
+        </div>
+      </fieldset>
+    </form>
+  </div>
+
 
   <!-- Footer -->
   <footer class="footer">
@@ -90,4 +107,5 @@
   </footer>
 
 </body>
+
 </html>
