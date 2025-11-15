@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Nike Inspired</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" crossorigin href="/assets/style-DRJfMWRS.css">
+</head>
+
+<body>
+
+  
+  <header class="navbar">
+    <div class="logo">
+      <img src="/assets/nike-logo-0-Bn2-KrZw.png" alt="Logo">
+    </div>
+
+   
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">☰</label>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="../index.html" class="active">Home</a></li>
+        <li><a href="../pages/men.html">Men</a></li>
+        <li><a href="../pages/women.html">Women</a></li>
+        <li><a href="../pages/kids.html">Kids</a></li>
+        <li><a href="../pages/collection.html">Collection</a></li>
+        <li><a href="../pages/review.html">Reviews</a></li>
+        <li><a href="../pages/contact.html">Contact</a></li>
+        <li><a href="../pages/login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <div class="contact-form" style="margin-top: 10%;">
+    <h2>Share Your Feedback</h2>
+    <form action="#" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Contact & Feedback</legend>
+
+        <div class="form-grid">
+           
+          <div class="column">
+            <label for="fullname">Full Name</label>
+            <input id="fullname" name="fullname" type="text" required placeholder="Full Name">
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="Email">
+
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" placeholder="Phone Number">
+
+            <label for="category">Category</label>
+            <select id="category" name="category" required>
+              <option value="">-- Select Category --</option>
+              <option value="product">Product Feedback</option>
+              <option value="service">Service Feedback</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+         
+          <div class="column">
+            <label for="file">Upload Screenshot (optional)</label>
+            <input id="file" name="file" type="file" accept=".jpg,.jpeg,.png,.pdf">
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Write your feedback..." required></textarea>
+
+            <label for="rating">Rate Us (0-10)</label>
+            <input id="rating" name="rating" type="range" min="0" max="10" value="5">
+          </div>
+        </div>
+
+        <label class="checkbox-row">
+          <input type="checkbox" required>
+          <span>I confirm my feedback is genuine.</span>
+        </label>
+
+        <div class="controls">
+          <input type="reset" value="Reset">
+          <input type="submit" value="Submit">
+        </div>
+      </fieldset>
+    </form>
+  </div>
+
+
+   
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <h3>Nike Inspired</h3>
+        <p>&copy; 2025 Nike-Inspired. All rights reserved.</p>
+      </div>
+      <div class="footer-right">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+        <div class="social-icons">
+          <i class="ri-facebook-line"></i>
+          <i class="ri-twitter-line"></i>
+          <i class="ri-instagram-line"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

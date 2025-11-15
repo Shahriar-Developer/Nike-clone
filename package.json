@@ -1,0 +1,27 @@
+{
+  "name": "website-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shahriar-Developer/Nike-clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Shahriar-Developer/Nike-clone/issues"
+  },
+  "homepage": "https://github.com/Shahriar-Developer/Nike-clone#readme",
+  "devDependencies": {
+    "vite": "^7.2.2"
+  },
+  "dependencies": {
+    "path": "^0.12.7"
+  }
+}
