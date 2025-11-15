@@ -16,6 +16,11 @@
     <div class="logo">
       <img src="../images/nike-logo-0.png" alt="Logo">
     </div>
+
+    <!-- Hamburger Toggle -->
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">☰</label>
+
     <nav>
       <ul class="nav-links">
         <li><a href="../index.html" class="active">Home</a></li>
@@ -30,82 +35,126 @@
     </nav>
   </header>
 
-  <!-- Hero Banner -->
+
+
   <section class="hero-small">
     <div class="hero-text">
       <h1>New Collection</h1>
       <p>Fresh designs inspired by the energy of movement.</p>
+      <blockquote>
+        "Just Do It"
+        <footer>— <cite>Nike</cite></footer>
+      </blockquote>
       <a href="collection.html" class="btn">Our Latest..</a>
     </div>
   </section>
 
-  <!-- Product Grid -->
   <section class="products">
     <h2>Our Latest Drops</h2>
     <div class="product-grid">
 
-      <div class="product-card">
+      <figure class="product-card">
         <img src="../images/collection/M+J+JD+AIR+SS+CREW.avif" alt="Collection Product 1">
+        <figcaption>Air Max Pulse — Limited Edition</figcaption>
         <h3>Air Max Pulse</h3>
         <p>BDT 7700</p>
         <a href="contact.html"><button>Add to Cart</button></a>
-      </div>
+      </figure>
 
-      <div class="product-card">
+      <figure class="product-card">
         <img src="../images/collection/M+J+SPRT+GFX+SS+CREW+WOF+JH.avif" alt="Collection Product 2">
+        <figcaption>Dunk Low Retro — Popular Choice</figcaption>
         <h3>Dunk Low Retro</h3>
         <p>BDT 67098</p>
         <a href="contact.html"><button>Add to Cart</button></a>
-      </div>
-
-      <div class="product-card">
-        <img src="../images/collection/M+NK+TF+SHERPA+PANT+NAOS.avif" alt="Collection Product 3">
-        <h3>Jordan 1 Mid</h3>
-        <p>BDT 67045</p>
-        <a href="contact.html"><button>Add to Cart</button></a>
-      </div>
-
-      <div class="product-card">
-        <img src="../images/collection/W+NSW+PHNX+BCL+HDY.avif" alt="Collection Product 5">
-        <h3>ZoomX Vaporfly</h3>
-        <p>BDT 6700</p>
-        <a href="contact.html"><button>Add to Cart</button></a>
-      </div>
-
-      <div class="product-card">
-        <img src="../images/collection/NIKE+X+LEGO+COLLECTION+HOODIE.avif" alt="Collection Product 4">
-        <h3>Infinity Run Flyknit</h3>
-        <p>BDT 6709</p>
-        <a href="contact.html"><button>Add to Cart</button></a>
-      </div>
-
-      <div class="product-card">
-        <img src="../images/collection/M+J+SPRT+GFX+SS+CREW+WOF+JH.avif" alt="Collection Product 2">
-        <h3>Dunk Low Retro</h3>
-        <p>BDT 67098</p>
-        <a href="contact.html"><button>Add to Cart</button></a>
-      </div>
-
-
-      <div class="product-card">
-        <img src="../images/collection/W+NSW+PHNX+BCL+HDY.avif" alt="Collection Product 5">
-        <h3>ZoomX Vaporfly</h3>
-        <p>BDT 6700</p>
-        <a href="contact.html"><button>Add to Cart</button></a>
-      </div>
-
-      <div class="product-card">
-        <img src="../images/collection/M+J+JD+AIR+SS+CREW.avif" alt="Collection Product 1">
-        <h3>Air Max Pulse</h3>
-        <p>BDT 7700</p>
-        <a href="contact.html"><button>Add to Cart</button></a>
-      </div>
-
+      </figure>
 
     </div>
   </section>
 
-  <!-- Footer -->
+
+  <section class="comparison">
+    <h2>Compare Our Products</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Sizes</th>
+          <th>Rating</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Air Max Pulse</td>
+          <td>BDT 7700</td>
+          <td>40-45</td>
+          <td>★★★★☆</td>
+        </tr>
+        <tr>
+          <td>Dunk Low Retro</td>
+          <td>BDT 67098</td>
+          <td>38-44</td>
+          <td>★★★★★</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4">Last Updated: <time datetime="2025-11-15">Nov 15, 2025</time></td>
+        </tr>
+      </tfoot>
+    </table>
+  </section>
+
+
+  <section class="specs">
+    <h2>Product Specs</h2>
+    <dl>
+      <dt>Material</dt>
+      <dd>Mesh + Leather</dd>
+      <dt>Weight</dt>
+      <dd>320g</dd>
+      <dt>Sole</dt>
+      <dd>Rubber</dd>
+    </dl>
+  </section>
+
+
+  <section class="faq">
+    <h2>FAQs</h2>
+    <details>
+      <summary>Return Policy</summary>
+      <p>Products can be returned within 7 days if unused.</p>
+    </details>
+    <details>
+      <summary>Delivery Time</summary>
+      <p>Standard delivery within 3-5 business days.</p>
+    </details>
+  </section>
+
+
+  <section class="filter">
+    <h2>Filter Products</h2>
+    <label for="product-filter">Choose Category:</label>
+    <select id="product-filter">
+      <optgroup label="Men">
+        <option>Air Max</option>
+        <option>Jordan</option>
+      </optgroup>
+      <optgroup label="Women">
+        <option>Dunk Low</option>
+        <option>Infinity Run</option>
+      </optgroup>
+    </select>
+  </section>
+
+
+  <aside class="offers">
+    <h3>Special Offer</h3>
+    <p>Buy 2 get 1 free on selected sneakers.</p>
+  </aside>
+
+
   <footer class="footer">
     <div class="footer-content">
       <div class="footer-left">
